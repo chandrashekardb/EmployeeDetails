@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    background-image: linear-gradient(to right, red , yellow);
+    padding: 10px 30px;
+}
+
+.header h5{
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.upper-btn-box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 30px;
+}
+
+.upper-btn-box .left-box{
+    width: 50%;
+    height: 50px;    
+    display: flex;
+    align-items: center;
+}
+
+.upper-btn-box .left-box input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.upper-btn-box .left-box button,.upper-btn-box .right-box button{
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#0000FF ;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.upper-btn-box .left-box button:hover{
+    opacity: 0.8;
+}
+
+.upper-btn-box .right-box{
+    width: 50%;
+    height: 50px;  
+}
+
+.upper-btn-box .right-box input{
+    outline: none;
+    border: none;
+    width: 60%;
+    border-bottom: 2px solid greenyellow;
+    font-size: 20px;
+}
+
+.table-box{
+    width: 100%;
+    padding: 30px;
+}
+
+.table-box table{
+    width: 100%;    
+}
+
+.table-box table tr th{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-right: 1px solid #ccc;
+    padding: 30px 0px 0px;
+    border-bottom: 1px solid black;
+}
+
+.table-box table tr td{
+    border-right: 1px solid #ccc;
+    padding: 10px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.table-box table tr td button{
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: #5cb85c;
+    font-size: 18px;
+    color: white;
+    margin: 5px 5px;
+    border-radius: 3px;
+    cursor: pointer;    
+}
+
+/* Start model coding */
+
+.model{
+   width: 0%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-top: 20px groove #4286f5;
+    background-color: #f2f2f2;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+.model.active{
+    opacity: 1;
+    z-index: 1;
+    width: 70%;
+}
+
+.model .close-icon{
+    position: absolute;
+    right: -20px;
+    top: -60px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #ee534f;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.model .left-model{
+    width: 30%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.model .left-model .img-box{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 30px;    
+    position: relative;
+}
+
+.model .left-model .img-box input{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    opacity: 0;
+}
+
+.model .left-model .img-box button{
+    font-size: 20px;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    color: #4286f5;
+}
+
+.model .left-model .img-box img{
+    border-radius: 10px;
+}
+
+.model .right-model{
+    width: 70%;
+    height: 100%;
+    border-left: 5px groove #4286f5;
+    padding: 30px;
+}
+
+.model .right-model .input-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.model .right-model .input-box label{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 15px 0px;
+}
+
+.model .right-model .input-box input{
+    width: 70%;
+    margin: 10px 0px;
+    border: none;
+    padding: 8px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #4286f5;
+    font-size: 22px;
+}
+
+.model .right-model  button{
+    width: 45%;
+    border: none;
+    outline: none;
+    background-color: #4286f5;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.model .right-model button:disabled{
+   filter: grayscale(80%);
+}
+
+
+

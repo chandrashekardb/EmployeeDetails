@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Employee Details</title>
+</head>
+<body>
+    <div class="header">
+        <h5>Employee Details</h5>
+    </div>
+
+    <div class="upper-btn-box">
+        <div class="left-box">
+            <button id="add-btn">➕Add Employee</button>
+            <button id="del-all-btn" style="background-color: #33b5e6;">🌋Clear All Data</button>
+            <input type="checkbox" name="" id="del-all-box">
+        </div>
+        <div class="right-box">
+            <button style="border: none; font-size: 22px;background-color: #fff;">🐶</button>
+            <input id="empId" type="text" placeholder="Enter employee Id">
+            <button  style="background-color: #00ff00;">Search</button>
+        </div>
+    </div>
+
+    <div class="table-box">
+        <table >
+            <tr>
+                <th>Sr.No</th>
+                <th>Profile</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>E-mail</th>
+                <th>Office Code</th>
+                <th>Job Title</th>
+                <th>Actions</th>
+            </tr>
+            <tbody id="table-data">
+
+            </tbody>
+       
+        </table>
+    </div>
+
+    <div class="model ">
+        <button class="close-icon">❌</button>
+        <div class="left-model">
+            <div class="img-box">
+                <img src="img/avatar.png" id="profile-pic" width="150" height="150" alt="">
+                <button >➕</button>
+                <input type="file" id="upload-field">
+            </div>
+            
+        </div>
+        <div class="right-model">
+           <form id="register-form">
+            <div class="input-box">
+                <label for="id">Id</label>
+                <input type="text" required id="id" name="id">
+            </div>
+
+            <div class="input-box">
+                <label for="name">Name</label>
+                <input type="text" required id="name" name="name">
+            </div>
+
+            <div class="input-box">
+                <label for="l-name">Last Name</label>
+                <input type="text" required id="l-name" name="l-name">
+            </div>
+
+            <div class="input-box">
+                <label for="e-mail">E-mail</label>
+                <input type="e-mail" required id="e-mail" name="e-mail">
+            </div>
+
+            <div class="input-box">
+                <label for="office-code">Office code</label>
+                <input type="text" required id="office-code" name="office-code">
+            </div>
+
+            <div class="input-box">
+                <label for="job-title">Job Title</label>
+                <input type="text" required id="job-title" name="job-title">
+            </div>
+            <div>
+                <button id="register-btn" type="submit">Register</button>
+                <button id="update-Btn" disabled="disabled" style="background-color: #ee534f;">Update</button>
+            </div>
+           </form>
+            
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
